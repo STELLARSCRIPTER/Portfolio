@@ -3,7 +3,31 @@ import { motion } from 'motion/react';
 import { CheckCircle2, Award, Briefcase, Workflow, Check } from 'lucide-react';
 import { statsData } from '../data';
 
-// Custom Counter sub-component
+function CompaniesPopup() {
+  const [open, setOpen] = useState(false);
+  const companies = ['Frost & Sullivan', 'Onwords Smart Solutions'];
+
+  return (
+    <div className="relative">
+      <p
+        className="font-sans text-[11px] text-blue-400 leading-tight cursor-pointer underline underline-offset-2 hover:text-blue-300 transition-colors"
+        onClick={() => setOpen(!open)}
+      >
+        View companies ↗
+      </p>
+      {open && (
+        <div className="absolute bottom-6 left-0 z-10 bg-[#141414] border border-blue-500/30 rounded p-3 shadow-lg min-w-[180px]">
+          {companies.map((c, i) => (
+            <p key={i} className="font-sans text-[11px] text-[#B8B8B8] py-1 border-b border-[#2A2A2A] last:border-0">
+              {c}
+            </p>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Counter({ targetValue, duration = 1200, labelPrefix = "0", suffixStr = "" }) {
   const [count, setCount] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -95,11 +119,10 @@ export default function About() {
             
             <p className="font-sans text-sm sm:text-base leading-relaxed text-[#B8B8B8] mb-6">
               My work combines analytics, CRM operations, and business intelligence, with a strong foundation in mathematics. I use data to uncover insights that improve performance, efficiency, and customer engagement.
-
             </p>
             
             <p className="font-sans text-sm sm:text-base leading-relaxed text-[#B8B8B8] mb-10">
-I have experience in campaign analysis, reporting, and CRM management, helping teams make better, data-driven decisions.
+              I have experience in campaign analysis, reporting, and CRM management, helping teams make better, data-driven decisions.
             </p>
 
             <div className="border-t border-[#2A2A2A] pt-8">
@@ -124,7 +147,6 @@ I have experience in campaign analysis, reporting, and CRM management, helping t
           {/* Stats Bento Elements: 5 Columns */}
           <div className="lg:col-span-5 grid grid-cols-2 gap-4 w-full">
             {statsData.map((stat, idx) => {
-              // Extract numeric value from label or value
               const hasPlus = stat.label.includes('+');
               const suffix = hasPlus ? '+' : '';
               return (
@@ -144,9 +166,13 @@ I have experience in campaign analysis, reporting, and CRM management, helping t
                     <p className="font-mono text-[9px] uppercase text-blue-400 tracking-wider mb-2 leading-none">
                       {stat.suffix.trim()}
                     </p>
-                    <p className="font-sans text-[11px] text-[#B8B8B8] leading-tight">
-                      {stat.desc}
-                    </p>
+                    {stat.suffix.trim() === 'Companies Worked' ? (
+                      <CompaniesPopup />
+                    ) : (
+                      <p className="font-sans text-[11px] text-[#B8B8B8] leading-tight">
+                        {stat.desc}
+                      </p>
+                    )}
                   </div>
                 </div>
               );
