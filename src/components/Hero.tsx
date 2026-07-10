@@ -8,12 +8,12 @@ interface HeroProps {
 
 export default function Hero({ onScrollToSection }: HeroProps) {
   const techBadges = [
-    'Power BI',
-    'Excel',
+    'MARKETING ANALYTICS',
+    'PERFORMANCE MARKETING',
     'CRM Operations',
-    'Meta Ads',
-    'Google Ads',
-    'Data Analysis'
+    'BUSINESS INTELLIGENCE',
+    'FINANCIAL ANALYSIS',
+    'DATA-DRIVEN DECISION MAKING'
   ];
 
   return (
@@ -77,9 +77,9 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-sans font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight text-[#FFFFFF] leading-[1.1] mb-6 uppercase"
           >
-            Driving Business Growth <br className="hidden sm:inline" />
+           TURNING BUSINESS & FINANCIAL DATA <br className="hidden sm:inline" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-300">
-               Through Data & Analytics
+               INTO ACTIONABLE INSIGHTS
             </span>
           </motion.h1>
 
@@ -89,7 +89,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="font-sans font-semibold text-sm sm:text-base tracking-wider text-blue-400 mb-6 uppercase"
           >
-            CRM & DATA ANALYST • BUSINESS INTELLIGENCE • MARKETING ANALYTICS
+            FINANCIAL & CRM ANALYTICS • POWER BI • SQL • BUSINESS INTELLIGENCE
           </motion.p>
 
           <motion.p
@@ -98,7 +98,12 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="font-sans font-normal text-sm sm:text-base leading-relaxed text-[#B8B8B8] max-w-xl mb-10"
           >
-            Data analytics professional with a Master’s in Mathematics and experience in CRM operations, campaign analytics, and business intelligence. Focused on turning business data into actionable insights that drive growth and strategic decisions.
+            Marketing and analytics professional with a Master’s in Mathematics and hands-on experience in CRM operations, campaign analytics, and business intelligence.
+
+Skilled in analyzing marketing, CRM, and business data to generate actionable insights using Power BI, SQL, and Excel.
+
+Focused on driving campaign performance, supporting data-driven decisions, and delivering measurable business and financial impact.
+          
           </motion.p>
 
           <motion.div
@@ -129,7 +134,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             className="border-t border-[#2A2A2A] pt-6"
           >
             <p className="font-mono text-[10px] text-[#B8B8B8] uppercase tracking-wider mb-3">
-              Core Competency Pillars //
+              Areas of Expertise//
             </p>
             <div className="flex flex-wrap gap-2">
               {techBadges.map((badge, index) => (
@@ -173,10 +178,10 @@ export default function Hero({ onScrollToSection }: HeroProps) {
               </div>
               <div className="flex flex-col">
                 <span className="font-mono text-[9px] text-[#B8B8B8] uppercase tracking-widest leading-none">
-                  Data Architecture
+               
                 </span>
                 <span className="font-sans font-bold text-[11px] text-white">
-                  CRM Operations Model
+                  
                 </span>
               </div>
             </div>

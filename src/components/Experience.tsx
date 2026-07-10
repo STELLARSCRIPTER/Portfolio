@@ -124,11 +124,11 @@ export default function Experience() {
                   Technology Systems
                 </span>
                 <span className="font-sans font-bold text-xs text-blue-400 tracking-wider uppercase block">
-                  5 Months tenure
+                  May 2025 - Sep 2025
                 </span>
               </div>
               <div className="lg:mt-6 hidden lg:block font-mono text-[9px] text-[#B8B8B8]/50">
-                LOC: COIMBATORE
+                Location: COIMBATORE
               </div>
             </div>
 

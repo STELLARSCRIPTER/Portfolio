@@ -97,7 +97,7 @@ export default function About() {
   const strengths = [
     'CRM Operations & Lead Management',
     'Data Analytics & Reporting',
-    'Power BI Dashboard Development',
+    'Power BI Dashboard Development (Real-Time Analysis)',
     'Campaign Performance Analysis',
     'Business Process Optimization',
     'Strategic Decision Support'
@@ -118,11 +118,12 @@ export default function About() {
             </h2>
             
             <p className="font-sans text-sm sm:text-base leading-relaxed text-[#B8B8B8] mb-6">
-              My work combines analytics, CRM operations, and business intelligence, with a strong foundation in mathematics. I use data to uncover insights that improve performance, efficiency, and customer engagement.
+              My work sits at the intersection of analytics, CRM operations, and business intelligence, backed by a strong foundation in mathematics. I leverage data to uncover insights that enhance performance, efficiency, and customer engagement.
+
             </p>
             
             <p className="font-sans text-sm sm:text-base leading-relaxed text-[#B8B8B8] mb-10">
-              I have experience in campaign analysis, reporting, and CRM management, helping teams make better, data-driven decisions.
+              I have hands-on experience in campaign analysis, reporting, and CRM management, supporting teams in making effective, data-driven decisions.
             </p>
 
             <div className="border-t border-[#2A2A2A] pt-8">
