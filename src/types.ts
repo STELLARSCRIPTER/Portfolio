@@ -27,6 +27,7 @@ export interface ProjectItem {
   imageType: 'dashboard' | 'campaign' | 'crm' | 'bi' | 'stats';
   caseStudyMetrics?: { label: string; value: string }[];
   keyOutcomes?: string[];
+   liveDemo?: string; 
 }
 
 export interface ContactForm {

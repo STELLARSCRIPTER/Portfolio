@@ -53,6 +53,20 @@ export default function ProjectDetailsModal({ project, isOpen, onClose }: Projec
                 </button>
               </div>
 
+              <p>{project.description}</p>
+
+{project.liveDemo && (
+  <a
+    href={project.liveDemo}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-4 inline-block px-4 py-2 border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-black transition"
+  >
+    View Dashboard →
+  </a>
+)}
+              
+
               {/* Main Case Content */}
               <div className="p-6 md:p-8 grid grid-cols-1 md:grid-cols-12 gap-8">
                 
@@ -102,7 +116,7 @@ export default function ProjectDetailsModal({ project, isOpen, onClose }: Projec
                   <div>
                     <h4 className="font-mono text-[10px] text-[#FFFFFF] uppercase tracking-wider mb-4 pb-2 border-b border-[#2A2A2A] flex justify-between">
                       <span>Measurable Outcomes</span>
-                      <span className="text-blue-400">MATH_STOCH</span>
+                      <span className="text-blue-400"></span>
                     </h4>
 
                     <div className="space-y-4">
@@ -165,5 +179,7 @@ export default function ProjectDetailsModal({ project, isOpen, onClose }: Projec
         </div>
       )}
     </AnimatePresence>
+
+
   );
 }

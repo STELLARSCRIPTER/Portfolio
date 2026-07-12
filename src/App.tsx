@@ -62,7 +62,7 @@ export default function App() {
             </div>
             
             <p className="font-sans text-xs text-[#B8B8B8] max-w-sm leading-normal">
-              © 2026 Sanjay Kumar. Executive Data &amp; CRM Portfolio. <br /> All operational rights and case briefings verified under corporate parameters.
+              © 2026 Sanjay Kumar. Executive Data &amp; CRM Portfolio. <br /> 
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export default function App() {
               <ExternalLink className="w-2.5 h-2.5" />
             </a>
             <a
-              href="#about"
+              href="www.linkedin.com/in/sanjaymarketer"
               onClick={(e) => {
                 e.preventDefault();
                 handleScrollToSection('about');

@@ -112,22 +112,27 @@ export const projectData: ProjectItem[] = [
   },
   {
     id: 'project-marketing',
-    title: 'Marketing Campaign Performance Analysis',
+    title: 'Customer Churn Performance Analysis',
     subtitle: 'Stochastic Advertising Optimization',
-    description: 'A complete campaign performance audit and performance simulation. Analyzes demographic segmentation, visual ad variant returns, cost-per-acquisition (CPA), and overall ROI.',
-    longDescription: 'A systematic analytics review examining historical performance data from Meta and Google advertising campaigns. By applying statistical clustering, the project isolates high-affinity audiences and provides a roadmap for optimized budget reallocation.',
-    category: 'Digital Marketing',
-    tech: ['Google Ads', 'Meta Ads', 'Excel PowerQuery', 'Cohort Analysis'],
+    liveDemo: 'https://public.tableau.com/views/churn_modelling_17838472688850/Churn_Analysis',
+    description: 'A customer-focused analytics solution designed to evaluate churn behavior and support retention-driven marketing strategies..',
+    longDescription: 'Analyzes segmentation across demographics, geography, and activity levels, identifying high-risk customer groups and engagement gaps. Supports CRM and marketing teams in optimizing targeting, retention campaigns, and lifecycle management.',
+    category: 'Customer Analytics',
+    tech: ['PostgreSQL', 'Python', 'Excel', 'Tableau', 'Customer Segmentation'],
+      
     imageType: 'campaign',
     caseStudyMetrics: [
-      { label: 'CPA Reduction', value: '22%' },
-      { label: 'ROAS Improvement', value: '1.8x' },
-      { label: 'Reallocated Budget', value: '$12K' }
-    ],
+  { label: 'Churn Rate Identified', value: '20.5%' },
+  { label: 'High-Risk Segment', value: 'Age 40–55' },
+  { label: 'Active Customers', value: '51.5%' }
+],
     keyOutcomes: [
-      'Created custom marketing attribution models for long-cycle consumer products.',
-      'Isolated seasonal ad placement decay rates using cohort performance groups.',
-      'Automated daily programmatic data refreshes from search and social platforms.'
+       'Identified high churn concentration across specific age groups and regions.',
+  'Built customer segmentation model based on demographics and activity status.',
+  'Enabled comparison between active and exited customers for behavioral insights.',
+  'Designed interactive dashboard for real-time KPI tracking and filtering.',
+  'Improved visibility into customer retention patterns for CRM decision-making.',
+  'Performed exploratory analysis to detect patterns influencing customer churn.'
     ]
   },
   {

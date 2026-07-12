@@ -202,7 +202,7 @@ Focused on driving campaign performance, supporting data-driven decisions, and d
 
             {/* Elegant consulting grid coordinate visual element */}
             <div className="absolute bottom-4 right-4 z-20 text-right opacity-30 font-mono text-[8px] text-[#B8B8B8] pointer-events-none">
-              GRID: MATH_STOCH_1.06
+              
               <br />
               COORD: 11.025.CRM
             </div>
