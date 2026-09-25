@@ -1,12 +1,12 @@
 import { ExperienceItem, SkillCategory, ProjectItem } from './types';
 
 export const statsData = [
-  { value: 2, label: '02', suffix: ' Companies Worked', desc: 'Frost & Sullivan and Onwords Smart Solutions.' },
+  { value: 3, label: '$3M+', suffix: ' FY26 Revenue Tracked', desc: '' },
   { value: 6, label: '06+', suffix: ' Projects Shipped', desc: 'End-to-end analytics, ML, BI, and CRM builds.' },
   { value: 12, label: '12', suffix: ' Core Tools', desc: 'Python, SQL, PostgreSQL, Fabric, Power BI, Streamlit, XGBoost, more.' },
   { value: 4, label: '04', suffix: ' ML Models in Production', desc: 'Lead scoring, survival analysis, CLV, and causal uplift.' }
 ];
-
+ 
 export const experienceData: ExperienceItem[] = [
   {
     id: 'exp-frost',
