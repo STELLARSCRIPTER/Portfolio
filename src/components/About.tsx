@@ -97,7 +97,7 @@ export default function About() {
   const strengths = [
     'CRM Operations & Lead Management',
     'Data Analytics & Reporting',
-    'Power BI Dashboard Development (Real-Time Analysis)',
+    'ML-Powered Lead Scoring & Risk Segmentation',
     'Campaign Performance Analysis',
     'Business Process Optimization',
     'Strategic Decision Support'
@@ -118,13 +118,11 @@ export default function About() {
             </h2>
             
             <p className="font-sans text-sm sm:text-base leading-relaxed text-[#B8B8B8] mb-6">
-              My work sits at the intersection of analytics, CRM operations, and business intelligence, backed by a strong foundation in mathematics. I leverage data to uncover insights that enhance performance, efficiency, and customer engagement.
-
+Analytics engineer with an M.Sc in Mathematics and hands-on experience building end-to-end data platforms across Microsoft Fabric, PostgreSQL, and Python. At Frost & Sullivan, I own the CRM analytics layer tracking $3M+ in FY26 revenue across 7,600+ enquiries, 3,200+ leads, and 5 global regions.
             </p>
             
             <p className="font-sans text-sm sm:text-base leading-relaxed text-[#B8B8B8] mb-10">
-              I have hands-on experience in campaign analysis, reporting, and CRM management, supporting teams in making effective, data-driven decisions.
-            </p>
+Independently built CreditPulse — a live CRM analytics platform with four production ML models spanning lead scoring, survival analysis, customer lifetime value, and causal uplift. My work sits at the intersection of CRM operations, data engineering, and machine learning.            </p>
 
             <div className="border-t border-[#2A2A2A] pt-8">
               <h3 className="font-mono text-[11px] text-[#FFFFFF] uppercase tracking-wider mb-6">
