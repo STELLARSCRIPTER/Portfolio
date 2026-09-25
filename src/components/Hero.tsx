@@ -7,13 +7,13 @@ interface HeroProps {
 }
 
 export default function Hero({ onScrollToSection }: HeroProps) {
-  const techBadges = [
-    'MARKETING ANALYTICS',
-    'PERFORMANCE MARKETING',
-    'CRM Operations',
-    'BUSINESS INTELLIGENCE',
-    'FINANCIAL ANALYSIS',
-    'DATA-DRIVEN DECISION MAKING'
+   const techBadges = [
+    'MARKETING / REVOPS ANALYTICS',
+    'CRM PIPELINES',
+    'ML LEAD SCORING',
+    'SURVIVAL ANALYSIS',
+    'UPLIFT MODELING',
+    'MICROSOFT FABRIC'
   ];
 
   return (
@@ -77,9 +77,9 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-sans font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight text-[#FFFFFF] leading-[1.1] mb-6 uppercase"
           >
-           TURNING BUSINESS & FINANCIAL DATA <br className="hidden sm:inline" />
+           MARKETING / REVOPS <br className="hidden sm:inline" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-300">
-               INTO ACTIONABLE INSIGHTS
+               ANALYTICS ENGINEER
             </span>
           </motion.h1>
 
@@ -89,7 +89,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="font-sans font-semibold text-sm sm:text-base tracking-wider text-blue-400 mb-6 uppercase"
           >
-            FINANCIAL & CRM ANALYTICS • POWER BI • SQL • BUSINESS INTELLIGENCE
+            END-TO-END CRM PIPELINES • ML LEAD SCORING • SURVIVAL ANALYSIS • UPLIFT MODELING • FABRIC • PYTHON + POSTGRESQL
           </motion.p>
 
           <motion.p
@@ -98,12 +98,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="font-sans font-normal text-sm sm:text-base leading-relaxed text-[#B8B8B8] max-w-xl mb-10"
           >
-            Marketing and analytics professional with a Master’s in Mathematics and hands-on experience in CRM operations, campaign analytics, and business intelligence.
-
-Skilled in analyzing marketing, CRM, and business data to generate actionable insights using Power BI, SQL, and Excel.
-
-Focused on driving campaign performance, supporting data-driven decisions, and delivering measurable business and financial impact.
-          
+            Analytics engineer with an M.Sc in Mathematics and hands-on experience building end-to-end data platforms across Microsoft Fabric, PostgreSQL, and Python. At Frost & Sullivan, I own the CRM analytics layer tracking $2.5M+ in FY26 revenue across 7,600+ enquiries. Independently built CreditPulse — a live CRM analytics platform with four production ML models, deployed publicly. Targeting hybrid Marketing / RevOps Analytics Engineer roles where CRM domain fluency meets production-grade data engineering.
           </motion.p>
 
           <motion.div
